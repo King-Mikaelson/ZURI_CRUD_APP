@@ -1,9 +1,10 @@
 // SET UP MONGOOSE STILL GOING TO MOVE THIS TO A NEW FOLDER SETUP
 const mongoose = require("mongoose");
-// const connectionString = "mongodb://localhost:27017/Zuriapp";
-const connectionString = "mongodb+srv://michealjackson:michealjackson@cluster0.s0syo.mongodb.net/Zuriapp?retryWrites=true&w=majority"
+require("dotenv").config();
+const { MONGO_URI} = process.env
+
 module.exports = () => {
-    mongoose.connect(connectionString, {
+    mongoose.connect(MONGO_URI, {
         useNewUrlParser : true,
         useUnifiedTopology : true,
         useFindAndModify : false
