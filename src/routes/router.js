@@ -1,7 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const internCtrl = require("../controllers/internControllers")
-console.log(internCtrl);
+const internCtrl = require("../controllers/internControllers");k
 
 // POST REQUEST
 router.post("/interns", internCtrl.createNewIntern )
