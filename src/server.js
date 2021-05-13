@@ -15,6 +15,6 @@ app.use(routes)
 
 
 // PORT
-// const port = process.env.PORT || process.env.LOCAL_PORT;
+const PORT = process.env.PORT || 8000;
 
-app.listen(port, () => console.log(`my app is running on ${port}`));
+app.listen(PORT, () => console.log(`my app is running on ${PORT}`));
