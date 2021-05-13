@@ -8,7 +8,7 @@ router.post("/interns", internCtrl.createNewIntern )
 
 
 //GET REQUEST
-router.get("/interns", internCtrl.fetchAllIntern)
+router.get("/", internCtrl.fetchAllIntern)
 
 // PUT REQUEST
 router.put("/interns/:id", internCtrl.updateSingleIntern)
